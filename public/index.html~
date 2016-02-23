@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width =device-width, initial-scale=1.0" >
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="social-buttons/social-buttons.css">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
+    <!--ink type="text/css" rel="stylesheet" href="css/index.css"-->
+    <script src="jquery/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      /* Large destop */
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+        }
+        .linediv-l {
+          border-right: 1px white solid;
+        }
+        .linediv-r {
+          border-left: 1px white solid;
+        }
+      }
+
+      /* Landscape phones and down */
+      @media (min-width: 980px) {
+        .copy {
+          padding-top: 2.5% 10%;
+        }
+        .linediv-l {
+          border-bottom: 1px white solid;
+        }
+        .linediv-r {
+          border-top: 1px white solid;
+        }
+      }
+
+      /* All from factors */
+
+      /* Main body and headings */
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        test-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white; 
+      }
+
+      /* Marketing Copy and Footer */
+
+      .copy {
+        padding-top: 2.5%;
+        paddig-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: ccccff;
+      }
+
+			/* addThis */
+			div.addthis_toolbox {
+  			width:180px;
+  			margin: 0 auto;
+ 			}
+    </style>
+  </head>
+  <body>
+    
+    <!-- Mobile-friendly navbar adapted from exampl. -->
+    <!-- http://getbootstrap.com/2.3.2/examples/starter-template.html-->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" 
+		  						data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div> 
+
+
+    <!-- We use row-fluid inside containers to achive a resizable layout. -->
+    <div class="container">
+      <div class="row-fluid heading">
+        <div class="span12">
+	  	  <h1>Product</h1>
+				</div>
+      </div>
+      <div class="row-fluid subheading">
+        <div class="span12">
+	  	  <p class="lead">One sentence description.</p>
+				</div>
+      </div>
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+	  		<img class="img-polaroid" src="http://placehold.it/480x300">
+			</div>
+
+			<div class="span5 actions">
+	  		<div class="span8 offset2">
+	    		<div class="statistics">
+	      		<div class="span4">
+							<div class="linediv-l">
+							<h3>1000</h3> <p>backers</p>
+							</div>
+	      		</div>
+	      	<div class="span4">
+					<div class="linediv-c">
+		  			<h3>$6000</h3><p>of $10,000</p>
+					</div>
+	      </div>
+	      <div class="span4">
+					<div class="linediv-r">
+	        	<h3>10</h3><p>days left</p>
+					</div>
+	      </div>
+	    </div>
+	  </div>	  
+
+	  			<div class="span10 offset1">
+	    			<div class="thermometer progress active">
+	      			<div class="bar bar-success" style="width: 60%;"></div>
+	      			<div class="bar bar-warning" style="width: 40%;"></div>
+	    			</div>
+	  			</div>
+	  			<div class="span8 offset2 social">
+	    			<button class="btn btn-success btn-large">Preorder</button>
+	  			</div>
+	  			<div class="span10 offset2 social">
+						<!-- AddThis Button BEGIN -->
+						<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+							<a class="addthis_button_preferred_1"></a>
+							<a class="addthis_button_preferred_2"></a>
+							<a class="addthis_button_compact"></a>
+							<a class="addthis_counter addthis_bubble_style"></a>
+						</div>
+				 		<script type="text/javascript">var addthis_config = 
+						{"data_track_addressbar":true};</script>
+				 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e5f5d9549fdf9b"></script>
+						<!-- AddThis Button END -->
+	 		 		</div>
+				</div>
+			</div>
+
+      <!-- Beyond this part the marketing copy begins. -->
+      <div class="row-fluid section1">
+				<div class="span5 offset1 asset">
+	  			<img class="img-polaroid" src="http://placehold.it/480x300">
+				</div>
+				<div class="span5 copy">
+	  			<p>
+	    Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+	  			</p>
+				</div>
+      </div>
+
+      <div class="row-fluid section2">
+				<div class="span5 offset1 copu copy-right">
+	  			<p>
+	    Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+	  			</p>
+				</div>
+				<div class="span5 asset">
+	  			<img class="img-polaroid" src="http://placehold.it/480x300">
+				</div>
+     	</div>
+
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <div class="row-fluid faq">
+				<div class="span10 offset1">
+	  			<h3>FAQ</h3>
+	  			<div class="accordion" id="accordion2">
+	     			<div class="accordion-group">
+	       			<div class="accordion-heading">
+		 						<a class="accordion-toggle" data-toggle="collaps"
+		     				data-parent="#accordion2" href="#colladpseOne">
+		    				What dows FAQ stand for?
+		 						</a>
+	       			</div>
+	       			<div id="collapseOne" class="accordion-body collapse">
+		 						<div class="accordion-inner">
+		    					Frequently Asked Question.
+		 						</div>
+	       			</div>
+	     			</div>
+	     			<div class="accordion-group">
+	       			<div class="accordion-heading">
+		 						<a class="accordion-toggle" data-toggle="collaps"
+		     				data-parent="#accordion2" href="#colladpseTwo">
+		    				What's a Frequently Asked Question?
+		 						</a>
+	      			</div>
+	       			<div id="collapseTwo" class="accordion-body collapse">
+		 						<div class="accordion-inner">
+		    					A question which is commonly asked by users.
+		 						</div>
+	       			</div>
+	     			</div>
+	   			</div>
+	 			</div>
+	
+      </div>
+
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license -->
+      <div class="row-fluid footer">
+				<div class="span12">
+	  			<p>This work is licensed under the
+	    		<a href="http://creativecommons.org/licenses/by=sa/3.0/">CC By-SA 3.0
+	    		</a>, without all the cruft that would otherwise be 
+	    		put at the bottom of the page.</p>
+				</div>
+      </div>
+  	</div> <!-- container -->
+
+  </body>
+</html>
