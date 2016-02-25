@@ -91,7 +91,7 @@ boost::tribool request_parser::handle_input_char( request& req, char input )
 		{
 		  return false;
 		}
-	else
+		else
 		{
 		  req.uri.push_back(input);
 		  return boost::indeterminate;
